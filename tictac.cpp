@@ -35,6 +35,7 @@ int main()
 		display();                 //Display current game
 		if(num%2==0)       //Player 1 move
 		{
+		    num++;
 			l1: cout<<"\nP1 enter the place : "<<endl;
 			    cin>>place;
 			    if(a[place]==0)         // If unoccupied
@@ -62,7 +63,8 @@ int main()
 					goto l1;
 				}
 		}
-		else{                              // Player 2 move
+		else{
+                  num++;                  // Player 2 move
 				l2: cout<<"\nP2 enter the place : "<<endl;
 			    cin>>place;
 			    if(a[place]==0)       // If unoccupied
